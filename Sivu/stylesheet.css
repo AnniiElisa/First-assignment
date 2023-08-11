@@ -1,0 +1,124 @@
+
+		/* Otsikon koodit*/
+
+header {text-align:center;
+		font-size: 100px;
+		color:white;
+		background-image:url("Kuvat/Kokeilu.jpg");
+		background-repeat: no-repeat;
+		padding: 10px 10px 10px 10px;
+		background-attachment: fixed;
+  		background-size: cover;
+		height: 250px;
+		line-height: 250px;}
+
+		/* Koko sivua koskeva taustaväri */
+
+html 	{background-color: #dbd8cd;}
+
+		/* Päänavigoinnin väri sekä navigointipalkin tekstin keskennys */
+
+nav 	{background-color: #9b8357;
+		text-align:center;}
+
+		/* Kaiken leipätekstin fontti */
+
+p 		{font-family:Arial;}
+
+		/* Väliotsikoiden fontin tiedot*/
+
+h1 		{font-family:Economica;
+		color:white;
+		text-align:center;
+		background-color: #afab88;}
+
+
+		/* Keskellä olevien navigointien koodit */
+
+.ok:link, .ok:visited {
+  		background-color: #9b8357;
+  		color: #685840;
+  		padding: 10px 50px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+		font-size: 15px;}
+
+.ok:hover, .ok:active { background-color: #afab88;}
+
+
+		/* Vasemmalla olevien navigointien koodit */
+
+.aha:link, .aha:visited {
+  		background-color: #afab88;
+  		color: white;
+  		padding: 10px;
+  		text-align: center;
+  		text-decoration: none;
+ 		display:inline-block;
+		font-size: 15px;
+		width:100%;}
+
+.aha:hover, .aha:active { background-color: #9b8357;}
+
+
+		/* Keskipalkin juttuja*/
+
+div {
+		background-color: #dbd8cd;
+		margin:0px;}
+
+
+		/* Tavallisten linkkien tiedot */
+
+a 		{text-decoration: none;
+		color:black;
+		font-style: oblique}
+
+
+		/* ''Kalenteri''*/
+
+th 		{background-color:#9b8357;}
+
+tr:nth-child(even) {background-color: #afab88;
+		padding:0;}
+
+		/* Valokuvat pyöreäksi*/
+
+.pallo {border-radius: 50%; width:100%;}
+
+
+
+		/* Kaikki kentät */
+
+.column {float: left;
+		display: table;}
+
+		/* Vasen osa */
+
+.column.left {width: 20%;
+		display: table-cell;}
+
+		/* Oikea osa */
+
+.column.right {width: 20%;
+		display: table-cell;}
+
+		/* Keski osa */
+
+.column.middle {width: 58%;
+		background-color: white;
+		padding: 0 1%;
+		display: table-cell;}
+
+		/* Auttaa ettei ne mene päällekkäin eri koissa */
+
+.row:after {display: table;
+  		clear: both;
+		justify-content: space-between;}
+
+
+		/* Pitää huolen että näkyy oikein eri kokoisilla sivuilla */
+@media screen and (max-width: 600px) {
+	.column.left, .column.middle, .column.right { width:100%;}}
+
